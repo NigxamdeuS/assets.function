@@ -1,0 +1,89 @@
+.slider {
+    position: relative;
+    z-index: 1;
+    height: 100vh; /* スライダー全体の高さを100vhに設定 */
+}
+
+.slider-item {
+    position: relative; /* テキストが画像の上に表示されるように relative を指定 */
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider-item01 {
+    background: url(images/a.jpg);
+}
+
+.slider-item02 {
+    background: url(images/b.jpg);
+}
+
+.slider-item03 {
+    background: url(images/c.jpeg);
+}
+
+/* テキストのスタイル */
+.carousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    font-family: "Vujahday Script", cursive;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2; /* テキストを画像より前面に表示 */
+}
+
+/* スライダーの矢印のスタイル */
+.slick-prev, 
+.slick-next {
+    position: absolute;
+    z-index: 3; /* 矢印を前面に表示 */
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    height: 25px;
+    width: 25px;
+}
+
+.slick-prev {
+    left: 2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right: 2.5%;
+    transform: rotate(45deg);
+}
+
+/* ドットナビゲーションのスタイル */
+.slick-dots {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin: -50px 0 0 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background: #ccc;
+}
