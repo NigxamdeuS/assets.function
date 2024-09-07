@@ -1,0 +1,27 @@
+/* 通常のスタイル */
+.menu, .menu-right {
+    display: flex;
+}
+
+.openbtn {
+    display: none; /* 767px以上ではハンバーガーボタンを非表示 */
+}
+
+/* 767px以下の画面幅で適用するスタイル */
+@media (max-width: 767px) {
+    /* メインメニューを非表示にする */
+    .menu, .menu-right {
+        display: none;
+    }
+
+    /* ハンバーガーメニューのボタン */
+    .openbtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* ハンバーガーメニューがアクティブになったときに表示 */
+    #g-nav.active {
+        display: block;
+    }
+}

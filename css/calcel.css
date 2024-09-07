@@ -14,15 +14,15 @@
 }
 
 .slider-item01 {
-    background: url(images/a.jpg);
+    background: url(../images/a.jpg);
 }
 
 .slider-item02 {
-    background: url(images/b.jpg);
+    background: url(../images/b.jpg);
 }
 
 .slider-item03 {
-    background: url(images/c.jpeg);
+    background: url(../images/c.jpg);
 }
 
 /* テキストのスタイル */
@@ -81,9 +81,8 @@
 .slick-dots button {
     color: transparent;
     outline: none;
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
     display: block;
     border-radius: 50%;
-    background: #ccc;
 }
