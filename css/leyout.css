@@ -9,6 +9,10 @@ body {
     font-weight: bold; /* 太字を指定 */
 }
 
+li{
+    list-style: none;
+}
+
 
 .navbar {
     display: flex;
